@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+     <title>I am parent </title>
+    {% endblock %}
+
+
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+</head>
+
+
+<body>
+    <button type="button" class="btn btn-primary">Parent data</button>
+
+    <h1>This is Middle Part of parent</h1>
+
+
+    <h1>Last Statements of Parent</h1>   
+
+    {% block body_block %}
+     {% endblock %}
+
+
+
+    <script src="{% static 'js/mdb.js' %}"></script>
+</body>
+</html>
